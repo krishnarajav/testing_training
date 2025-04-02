@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name=" parallel Suite" parallel="classes" thread-count="2">
+  <test name="Parallel Tests">
+    <parameter name="OS" value="Win"/>
+    <classes>
+      <class name="pkg1.classes"/>
+      <class name="pkg1.classes1"/>
+    </classes>
+  </test>
+</suite>
